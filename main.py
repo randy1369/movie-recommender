@@ -11,7 +11,7 @@ selectvalue = st.selectbox("Select Movie from Dropdown", movies_list)
 
 
 def fetch_poster(movie_id):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=f50124df3033834039219fe3c792365f".format(movie_id)
+    url = "https://api.themoviedb.org/3/movie/{}?api_key=".format(movie_id)
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
